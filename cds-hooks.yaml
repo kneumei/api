@@ -25,7 +25,7 @@ paths:
         200:
           description: Success (includes CDS service metadata)
           schema:
-            $ref: '#/definitions/CDS Service Information'
+            $ref: '#/definitions/CDS%20Service%20Information'
 
   /cds-services/{id}:
     post:
@@ -41,12 +41,12 @@ paths:
           description: Body of CDS service request
           required: true
           schema:
-            $ref: '#/definitions/CDS Request'
+            $ref: '#/definitions/CDS%20Request'
       responses:
         200:
           description: Success (includes CDS Cards)
           schema:
-            $ref: '#/definitions/CDS Response'
+            $ref: '#/definitions/CDS%20Response'
 
 ################################################################################
 #                                 Definitions                                  #
@@ -58,7 +58,7 @@ definitions:
       services:
         type: array
         items:
-           $ref: '#/definitions/CDS Service'
+           $ref: '#/definitions/CDS%20Service'
 
   CDS Service:
     type: object
@@ -99,7 +99,7 @@ definitions:
         type: string
         format: url
       fhirAuthorization:
-        $ref: '#/definitions/FHIR Authorization'
+        $ref: '#/definitions/FHIR%20Authorization'
       context:
         type: object
       prefetch:
